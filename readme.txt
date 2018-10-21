@@ -3,7 +3,15 @@ macOS Unlocker V3.0 for VMware ESXi
 
 1. Introduction
 ---------------
+To expand...
 
+- run esxi-build.py on the mac
+- run the installer script like below (although it seems to be a noop?)
+- update local.sh to
+    - copy unlocker.py to /etc/rc.local.d
+    - run unlocker.py 
+    
+ 
 Unlocker 3 for ESXi is designed for VMware ESXi 6.5 and 6.7.
 
 The patch code carries out the following modifications dependent on the product
@@ -26,6 +34,10 @@ maintain on ESXi.
 
 2. Installation
 ---------------
+
+Build the installer on a Mac.
+
+
 Copy the distribution file to the ESXi host datastore using scp or some other
 data transfer system.
 
